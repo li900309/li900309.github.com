@@ -1,266 +1,368 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>My CV</title>
+	<meta charset="UTF-8" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta http-equiv="Generator" content="CV Maker - https://cvmkr.com/" />
-	<style type="text/css">
-		body {
-			background: #f0f0f0;
-			margin: 0;
-			padding: 0;
-			
-			font-family: 'Open Sans', 'Helvetica Light', 'Helvetica Neue', 'Arial Narrow', Helvetica, Arial, serif;
-			font-weight: 300;
-			line-height: 22px;
-			font-size: 14px;
 
-			color: #000;
-		}
+	<title>My CV - CV Maker</title>
 
-		h1, h2, h3, h4 {
-			font-family: 'Open Sans', 'Helvetica Light', 'Helvetica Neue', 'Arial Narrow', Helvetica, Arial, serif;
-			font-weight: 300;
-			font-weight: normal;
-			margin: 0 0 15px 0;
-			padding: 0;
-		}
-		h1 {
-			font-size: 350%;
-		}
-		h2 {
-			font-size: 210%;
-		}
-		h3 {
-			font-size: 130%;
-		}
+		<meta name="description" content="免费创建、修改、发布你的简历" />
+		<meta name="keywords" content="create English resume, create العربية resume, create Български resume, create Čeština resume, create Dansk resume, create Deutsch resume, create Eesti keel resume, create ქართული resume, create Dutch resume, create Español resume, create فارسی resume, create Français resume, create Galician resume, create Έλληνικά resume, create Hrvatski resume, create Hungarian resume, create Italiano resume, create עברית resume, create 한국어 resume, create Norsk resume, create Polski resume, create Português (br) resume, create Português (pt) resume, create Român resume, create Pусский resume, create Slovenščina resume, create Slovenský resume, create Shqip resume, create Suomi resume, create Svenska resume, create Türkçe resume, create Українська resume, create Tiếng Việt resume, create മലയാളം resume, create 中文 resume, create 繁體中文 resume" />
+	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+
+			<link href="https://cvmkr.com/public/?css=Member,ui,cleditor" rel="stylesheet" type="text/css" />
+	
+	<script type="text/javascript" src="https://cvmkr.com/public/lang/zh.js"></script>
+
+			<script type="text/javascript" src="https://cvmkr.com/public/?js=cleditor,global"></script>
+	
+	
 		
-		p {
-			margin: 0 0 10px 0;
-		}
-		
-		ul {
-			margin: 0;
-			list-style-type: square;
-		}
-		a {
-			color: #222;
-		}
-		/* ________________________________________________________ */
-		.rtl {
-			direction: rtl;
-		}
-		.clear {
-			clear: both;
-		}
+	<link rel="shortcut icon" href="https://cvmkr.com/favicon.ico" type="image/x-icon" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+	<meta name="robots" content="index,follow" />
 
-		#main {
-			background: #fff;
-			width: 900px;
-			padding: 35px;
-			margin: 0 auto 15px auto;
-			overflow: hidden;
-			
-			box-shadow: 0 0 6px #ccc;
-		}
-		
-		#title {
-			line-height: 42px;
-			border-bottom: 1px solid #000;
-			padding-bottom: 20px;
-			margin: 0px 0 20px 0;
-		}
-		
-		#credit {
-			margin-bottom: 20px;
-			font-size: 11px;
-			color: #999;
-			text-align: center;
-		}
-			#credit a {
-				color: #999;
-			}
-		
-		p label {
-			font-size: 110%;
-			margin-right: 10px;
-		}
-			p label span.colon {
-				display: inline;
-			}
-
-		
-		.section {
-			margin-bottom: 25px;
-		}
-		.section .set {
-		}
-		.item {
-			margin: 0 0 20px 0;
-		}
-
-		/*  _____________________________ */
-		.section .title {
-			text-transform: uppercase;
-			font-size: 160%;
-
-			margin: 0 auto 15px auto;
-			display: block;
-		}
-			.section .set {
-				margin-left: 25px;
-			}
-			.section .set h3 {
-				margin: 0;
-			}
-
-
-
-		.basic-info {
-			border-top: 0;
-		}
-		.section.basic-info .title {
-			float: left;
-			border: 0;
-		}
-		.basic-info .set {
-			float: right;
-			width: 70%;
-		}
-		.basic-info .address {
-			width: 40%;
-			float: left;
-		}
-		.basic-info .r {
-			float: right;
-			width: 60%;
-			text-align: right;
-		}
-			.basic-info label {
-				font-family: 'Open Sans', 'Helvetica Light', 'Helvetica Neue', 'Arial Narrow', Helvetica, Arial, serif;
-				font-weight: 300;
-			}
-			.basic-info label, .basic-info span  {
-				display: inline !important;
-			}
-		.basic-info p {
-			margin: 0;
-		}
-		
-		.section span {
-			display: block;
-		}
-		.section h3 span.l, .section span.r {
-			width: 49%;
-			float: left;
-		}
-			.section span.r {
-				float: right;
-				text-align: right;
-			}
-			.section-education .school,
-			.section-work .job_title {
-				font-size: 100%;
-				display: block;
-				margin: 5px 0 5px 0;
-			}
-
-		#photo {
-			width: 160px;
-			height: 200px;
-			overflow: hidden;
-			float: left;
-			margin-top: 4px;
-			border-radius: 4px;
-		}
-		#photo img {
-			width: 100%;
-			height: auto;
-		}
-		.header.photo {
-			margin-left: 190px;
-		}
-		.header.photo #title {
-			text-align: left;
-		}
-		.header.photo .basic-info {
-			float: none;
-			padding: 0;
-		}
-
-
-		@media screen and (max-width: 950px) {
-			body {
-				background: #fff;
-			}
-			#main {
-				box-shadow: none;
-				padding: 0;
-				padding: 5px;
-			}
-		}
-	</style>
+    <link rel="image_src" href="http://cvmkr.com/images/thumbnail.jpg" />
 </head>
-<body class="lang-en ">
+<body class="CV">
+<div id="wrap">
+	<div id="header">
+		<div id="bar">
+			<div class="content">
+				<p class="tag">
+					免费创建、修改、发布你的简历<!-- <a href="https://cvmkr.com/zh/Pages/about" class="more">查看更多</a> //-->
+				</p>
 
-<div id="main">
-	
-	<h1 id="title">李云志</h1>
-	<div class="basic-info section">
-		<h2 class="title">Contact</h2>
-		<div class="set">
-		
-						<div class="r">
-									<p class="email"><span class="value">124956623@qq.com</span></p>
+				<ul class="nav noul">
+					
+											<li class="oauth oauth_none">
+							<a href="https://cvmkr.com/"><strong>你好 Night_0309</strong></a>
+						</li>
+										
+					<li><a href="https://cvmkr.com/zh/Jobs/jobs">乔布斯</a></li>
+											<li><a href="https://cvmkr.com/zh/Member/account">修改账户</a></li>
+						<li><a href="https://cvmkr.com/zh/Member/?action=logout">注销</a></li>
+									</ul>
+
+				<div class="language">
+					<select id="language">
+													<option value="en" class="en">English</option>
+													<option value="ar" class="ar">العربية</option>
+													<option value="bg" class="bg">Български</option>
+													<option value="cz" class="cz">Čeština</option>
+													<option value="da" class="da">Dansk</option>
+													<option value="de" class="de">Deutsch</option>
+													<option value="ee" class="ee">Eesti keel</option>
+													<option value="ge" class="ge">ქართული</option>
+													<option value="nl" class="nl">Dutch</option>
+													<option value="es" class="es">Español</option>
+													<option value="fa" class="fa">فارسی</option>
+													<option value="fr" class="fr">Français</option>
+													<option value="gl" class="gl">Galician</option>
+													<option value="gr" class="gr">Έλληνικά</option>
+													<option value="hr" class="hr">Hrvatski</option>
+													<option value="hu" class="hu">Hungarian</option>
+													<option value="it" class="it">Italiano</option>
+													<option value="iw" class="iw">עברית</option>
+													<option value="ko" class="ko">한국어</option>
+													<option value="nn" class="nn">Norsk</option>
+													<option value="pl" class="pl">Polski</option>
+													<option value="br" class="br">Português (br)</option>
+													<option value="pt" class="pt">Português (pt)</option>
+													<option value="ro" class="ro">Român</option>
+													<option value="ru" class="ru">Pусский</option>
+													<option value="sl" class="sl">Slovenščina</option>
+													<option value="sk" class="sk">Slovenský</option>
+													<option value="sq" class="sq">Shqip</option>
+													<option value="fi" class="fi">Suomi</option>
+													<option value="sv" class="sv">Svenska</option>
+													<option value="tr" class="tr">Türkçe</option>
+													<option value="uk" class="uk">Українська</option>
+													<option value="vn" class="vn">Tiếng Việt</option>
+													<option value="ml" class="ml">മലയാളം</option>
+													<option value="zh" class="zh">中文</option>
+													<option value="zht" class="zht">繁體中文</option>
+											</select>
+				</div>
+				<div class="clear"> </div>
+			</div><!-- content //-->
+		</div><!-- #bar //-->
+
+		<div id="head">
+			<div class="content">
+									<a class="logo" href="https://cvmkr.com/"><img src="https://cvmkr.com/images/logo.png" alt="简历客" /></a>
 				
 				
-									<p class="phone"><span class="value">13003818637</span></p>
-							</div>
-			<div class="clear"> </div>
-		</div><!-- set //-->
+								<ul class="stats noul">
+					<li>
+						<span class="number">5,967,273</span>
+						下载量					</li>
+					<li class="r">
+						<span class="number">2,401,649</span>
+						已保存简历					</li>
+				</ul>
+				<div class="clear"> </div>
+			</div>
+		</div><!-- #head // -->
 		<div class="clear"> </div>
-	</div><!-- basic-info //-->
+	</div><!-- #header //-->
 
-	
-		
-			<div class="section section-qualifications">
-			<h2 class="title">Qualifications</h2>
-			<div class="set">
-						<div class="item">
-							<span class="info"><ul><li>Good user of C language and experience with ASM language of arm architecture<br /></li><li>Very familiar with USB sub-system framework and drivers of various OS (Linux kernel / UEFI / U-Boot / Coreboot)<br /></li><li>Low-level system debug skills can use hardware debugger like J-Link and DS5<br /></li><li>Skilled use with logic analyzers and oscilloscopes, can read schematics</li><li>Basic knowledge of script language bash and python<br /></li></ul></span>
-						</div>
-					</div>
-			<div class="clear"> </div>
-		</div>
-			<div class="section section-work">
-			<h2 class="title">Work experience</h2>
-			<div class="set">
-							<div class="item">
-								<h3><span class="company l">Rockchip</span>
-						<span class="date r">Jun 2012 &mdash; Present</span>
-							</h3>
-							<span class="clear"> </span>
-							<span class="job_title">Software Engineer</span><span class="info"><ul><li>Design,  implementation,  test and maintain USB drivers for Rockchip platform SoC chips</li><li>Contributor of linux kernel dwc2 USB controller driver</li><li>Maintainer of Coreboot USB stack<br /></li></ul></span><span class="clear"> </span>
-							</div>
-						</div>
-			<div class="clear"> </div>
-		</div>
-			<div class="section section-education">
-			<h2 class="title">Education</h2>
-			<div class="set">
-						<div class="item">
-							<h3><span class="course l">Microelectronics</span>
-						<span class="date r">Sep 2008 &mdash; Jun 2012</span>
-							</h3>
-							<span class="clear"> </span>
-							<span class="school">Fuzhou university</span><span class="info">Graduated with Bachelor Degree </span><span class="clear"> </span>
-						</div>
-						</div>
-			<div class="clear"> </div>
-		</div>
-		
+	<div id="main">
+		<div id="jobs-toast">
+	&nbsp;
 </div>
-	<div id="credit">Made with <a href="https://cvmkr.com/">CV Maker</a></div>
+<div id="cv">
+			<h1>
+			<a href="https://cvmkr.com/zh/CV/edit?id=2568181">My CV</a>
+			<sup class="lang">中文</sup>
+		</h1>
+		
+		
+	<div class="controls">
+		<span id="notice" class="notice"> </span>
+		<a href="https://cvmkr.com/zh/Pages/help" target="_blank" class="button" id="bt-help"><span class="ui-icon ui-icon-info"></span> 帮助</a>
+		<a href="#" class="button" id="bt-preview"><span class="ui-icon ui-icon-search"></span> 快速预览</a>
+		<a href="#" class="button" id="bt-save"><span class="ui-icon ui-icon-disk"></span> 保存</a>
+		
+				<a href="#" class="button" id="bt-download"><span class="ui-icon ui-icon-check"></span> 保存并下载</a>
+			</div>
+	<div class="clear"> </div>
+
+
+	<div class="options">	
+		<ul id="cvsections" class="noul">
+		</ul>
+		<p>
+			<a href="#" class="button" id="bt-add-section"><span class="ui-icon ui-icon-plusthick"></span> 添加新段落</a>
+		</p>
+		<p class="msg">* 拖拽上面段落的名称，重新排序该段落在简历中的位置</p>
+		<p class="msg">* 如果该段落名称为空，那么该段落将不会显示在你的简历中</p>
+	</div>
+
+	<form name="cv" method="post" action="" id="cvform" class="edit" enctype="multipart/form-data" target="postframe"><div id="section-basic" class="section "><h2 class="title"><span class="name">基本信息</span></h2><div class="sets"><div class="set"><input type="hidden" class="action" name="action" value="cv" />
+<input type="hidden" class="style" name="style" value="executive" />
+<input type="hidden" class="type" name="type" value="pdf" />
+<input type="hidden" class="page_size" name="page_size" value="pdf" />
+<input type="hidden" class="section_name" name="sections[basic][section_name]" value="基本信息" />
+<p class="field field_"><label>全名</label><input maxlength="100" type="text" name="sections[basic][data][fullname]" class="text" value="" />
+</p><p class="field field_"><label>邮箱地址</label><input maxlength="100" type="text" name="sections[basic][data][email]" class="text" value="" />
+</p><p class="field field_"><label>电话号码</label><input maxlength="100" type="text" name="sections[basic][data][phone]" class="text" value="" />
+<span class="info">如果你有多个号码请用逗号分隔</span></p><p class="field field_"><label>网站</label><input maxlength="100" type="text" name="sections[basic][data][website]" class="text" value="" />
+<span class="info">如果你有多个网站（网页）请用逗号分隔</span></p><hr />
+<p class="field field_"><label>地址1（省）</label><input maxlength="100" type="text" name="sections[basic][data][address1]" class="text" value="" />
+</p><p class="field field_"><label>地址2（市）</label><input maxlength="100" type="text" name="sections[basic][data][address2]" class="text" value="" />
+</p><p class="field field_"><label>地址3（街道）</label><input maxlength="100" type="text" name="sections[basic][data][address3]" class="text" value="" />
+</p><hr />
+<p class="field field_photo"><label for="photo">照片</label><input type="file" id="photo" name="photo" class="text" value="" />
+<span class="info">gif, jpg, png, jpeg<br />320 x 400 px</span></p><p class="field field_bt-photo"><input type="button" id="bt-photo" name="bt-photo" class="button" value="上传" />
+</p><p class="field field_bt-photo-remove"><input type="button" id="bt-photo-remove" name="bt-photo-remove" class="button" value="删除" />
+</p></div></div></div><div id="section-work" class="section addable renamable"><h2 class="title"><span class="name">工作经历</span></h2><div class="sets"><div class="set"><input type="hidden" class="section_name" name="sections[work][section_name]" value="工作经历" />
+<p class="field field_"><label>职位名称</label><input maxlength="100" type="text" name="sections[work][data][job_title][]" class="text" value="" />
+</p><p class="field field_"><label>公司名称</label><input maxlength="100" type="text" name="sections[work][data][company][]" class="text" value="" />
+</p><p class="field field_"><label>开始日期</label><input maxlength="100" type="text" name="sections[work][data][start][]" class="text" value="" />
+<span class="info">例如：2005年1月</span></p><p class="field field_"><label>结束日期</label><input maxlength="100" type="text" name="sections[work][data][end][]" class="text" value="" />
+<span class="info">例如：2009年1月 或 至今</span></p><p class="field field_"><label>其它信息</label><textarea name="sections[work][data][info][]" class="textarea"></textarea>
+<span class="info">可选信息：如工作内容，获得成就等</span></p><hr />
+</div></div></div><div id="section-qualifications" class="section renamable"><h2 class="title"><span class="name">资历证书</span></h2><div class="sets"><div class="set"><input type="hidden" class="section_name" name="sections[qualifications][section_name]" value="资历证书" />
+<p class="field field_"><label>资历证书</label><textarea name="sections[qualifications][data][info][]" class="textarea"></textarea>
+<span class="info">所获得的资历证书，合格证明等</span></p><hr />
+</div></div></div><div id="section-education" class="section addable renamable"><h2 class="title"><span class="name">教育</span></h2><div class="sets"><div class="set"><input type="hidden" class="section_name" name="sections[education][section_name]" value="教育" />
+<p class="field field_"><label>课程名称</label><input maxlength="100" type="text" name="sections[education][data][course][]" class="text" value="" />
+</p><p class="field field_"><label>学校名称</label><input maxlength="100" type="text" name="sections[education][data][school][]" class="text" value="" />
+</p><p class="field field_"><label>开始日期</label><input maxlength="100" type="text" name="sections[education][data][start][]" class="text" value="" />
+<span class="info">例如：2005年1月</span></p><p class="field field_"><label>结束日期</label><input maxlength="100" type="text" name="sections[education][data][end][]" class="text" value="" />
+<span class="info">例如：2009年1月 或 至今</span></p><p class="field field_"><label>其它信息</label><textarea name="sections[education][data][info][]" class="textarea"></textarea>
+<span class="info">其它可选信息，如课程描述，所得分数等</span></p><hr />
+</div></div></div><div id="section-interests" class="section renamable"><h2 class="title"><span class="name">兴趣爱好</span></h2><div class="sets"><div class="set"><input type="hidden" class="section_name" name="sections[interests][section_name]" value="兴趣爱好" />
+<p class="field field_"><label>兴趣爱好</label><textarea name="sections[interests][data][info][]" class="textarea"></textarea>
+</p></div></div></div><div id="section-references" class="section renamable"><h2 class="title"><span class="name">参考资料</span></h2><div class="sets"><div class="set"><input type="hidden" class="section_name" name="sections[references][section_name]" value="参考资料" />
+<p class="field field_"><label>参考资料</label><textarea name="sections[references][data][info][]" class="textarea">详细信息可联系获取</textarea>
+</p></div></div></div><div id="section-new" class="section renamable invisible newsection"><h2 class="title"><span class="name">新段落</span></h2><div class="sets"><div class="set"><input type="hidden" class="section_name" name="sections[new][section_name]" value="新段落" />
+<p class="field field_"><label>新段落</label><textarea name="sections[new][data][info][]" class="textarea"></textarea>
+</p></div></div></div></form>
+	<div class="clear"> </div>
+</div>
+
+<iframe id="postframe" name="postframe" src=""></iframe>
+
+<div id="photo-preview">
+</div>
+
+<script type="text/javascript">
+	var CV_INIT = true, CV_ID = "2568181", CV_DATA = {"basic":{"section_name":"\u57fa\u672c\u4fe1\u606f","data":{"fullname":"\u674e\u4e91\u5fd7","email":"124956623@qq.com","phone":"13003818637","website":null,"address1":null,"address2":null,"address3":null}},"work":{"section_name":"\u5de5\u4f5c\u7ecf\u5386","data":{"job_title":["\u5d4c\u5165\u5f0f\u8f6f\u4ef6\u5de5\u7a0b\u5e08"],"company":["\u798f\u5dde\u745e\u82af\u5fae\u7535\u5b50\u80a1\u4efd\u6709\u9650\u516c\u53f8"],"start":["2012\u5e747\u6708"],"end":["\u81f3\u4eca"],"info":["<ul><li>\u8d1f\u8d23\u8bbe\u8ba1\u548c\u7ef4\u62a4RK\u7cfb\u5217 SoC \u7684 USB \u9a71\u52a8\u4ee3\u7801<\/li><li>\u914d\u5408 IC \u8bbe\u8ba1\u56e2\u961f \u4f18\u5316 USB \u6a21\u5757\u6027\u80fd\u548c\u529f\u8017<\/li><li>\u5b9e\u73b0\u548c\u7ef4\u62a4 U-Boot \u548c Loader \u4e0b\u7684 USB \u901a\u8baf\u7a0b\u5e8f \uff08\u7528\u4e8e\u56fa\u4ef6\u4e0b\u8f7d\u548c\u5de5\u5382\u6d4b\u8bd5\u7a0b\u7a0b\u5e8f\uff09<\/li><li>\u8bbe\u8ba1\u548c\u5b9e\u73b0USB\u5145\u7535\u9a71\u52a8\uff08\u7b26\u5408 BC1.2 \u6807\u51c6\uff09<\/li><li>\u975e\u5e38\u719f\u6089 USB2.0 \/ EHCI \u7b49 USB \u76f8\u5173\u7684\u6280\u672f\u6807\u6ce8<br><\/li><\/ul><br>"]}},"qualifications":{"section_name":"\u8d44\u5386\u8bc1\u4e66","data":{"info":["<ul><li>\u826f\u597d\u7684 C \u8bed\u8a00 ARM \u6c47\u7f16 \u7f16\u7a0b\u80fd\u529b<\/li><li>\u975e\u5e38\u719f\u6089\u5404\u4e2a\u7cfb\u7edf\u5e73\u53f0\u4e0b\u7684 USB \u9a71\u52a8\u53ca\u6846\u67b6 \uff08Linux Kernel \/ UEFI \/ U-Boot \/ Coreboot \/ Wndows Mobile \uff09<\/li><li>\u719f\u6089 Linux \u8bbe\u5907\u9a71\u52a8\u6a21\u578b \u5177\u5907\u826f\u597d\u7684\u5185\u6838\u9a71\u52a8 debug \u80fd\u529b\u548c\u7ecf\u9a8c\u5b9a<\/li><li>\u4f1a\u4f7f\u7528\u786c\u4ef6\u8c03\u8bd5\u5de5\u5177\u5b9a\u4f4d\u548c\u5206\u6790\u5e95\u5c42\u95ee\u9898 \uff08J-Link Dstream \u7b49\uff09<\/li><li>\u719f\u7ec3\u4f7f\u7528\u5404\u79cd\u4eea\u5668 \u793a\u6ce2\u5668\/\u903b\u8f91\u5206\u6790\u4eea\/\u534f\u8bae\u5206\u6790\u4eea\u7b49 \u5b9a\u4f4d\u548c\u5206\u6790\u95ee\u9898<\/li><li>\u5f88\u597d\u7684\u786c\u4ef6\u57fa\u7840\u77e5\u8bc6\uff0c\u4f1a\u8bfb\u786c\u4ef6\u539f\u7406\u56fe<\/li><li>\u4f7f\u7528\u811a\u672c\u8bed\u8a00\u89e3\u51b3\u57fa\u672c\u95ee\u9898\uff08Bash \u548c Python\uff09<\/li><li>\u719f\u7ec3\u4f7f\u7528 Git \/ SVN \u7b49\u7248\u672c\u7ba1\u7406\u5de5\u5177<\/li><li>\u826f\u597d\u7684\u82f1\u8bed\u8bfb\u5199\u80fd\u529b<\/li><\/ul><br>"]}},"education":{"section_name":"\u6559\u80b2","data":{"course":[""],"school":["\u798f\u5dde\u5927\u5b66"],"start":["2008\u5e749\u6708"],"end":["2012\u5e746\u6708"],"info":["\u5fae\u7535\u5b50\u5b66\u4e13\u4e1a\u672c\u79d1\u6bd5\u4e1a"]}},"interests":{"section_name":"\u5174\u8da3\u7231\u597d","data":{"info":["\u6e38\u6cf3\/\u7bee\u7403"]}},"references":{"section_name":"\u53c2\u8003\u8d44\u6599","data":{"info":["Mails in Linux Kenel Mail List : https:\/\/patchwork.kernel.org\/project\/LKML\/list\/?submitter=116601<br>Coreboot commits : http:\/\/review.coreboot.org\/#\/q\/lyz@rock-chips.com<br>"]}}}, CV_USER = '1022004', CV_SECTIONS = {"basic":{"name":"\u57fa\u672c\u4fe1\u606f","addable":false,"renamable":false},"work":{"name":"\u5de5\u4f5c\u7ecf\u5386","addable":true,"renamable":true},"qualifications":{"name":"\u8d44\u5386\u8bc1\u4e66","addable":false,"renamable":true},"education":{"name":"\u6559\u80b2","addable":true,"renamable":true},"interests":{"name":"\u5174\u8da3\u7231\u597d","addable":false,"renamable":true},"references":{"name":"\u53c2\u8003\u8d44\u6599","addable":false,"renamable":true}},
+		CV_ORDER = ["basic","work","qualifications","education","interests","references"], CV_MAX_ADDABLES = 30,
+		CV_MAX_SECTIONS = 20, CV_PHOTO_FILES = ["gif","jpg","png","jpeg"], CV_PHOTO_SIZE = 900;
+</script>
+
+<noscript><h2>必须开启浏览器的javascript支持才能使用该功能</h2>点击<a href="https://www.google.com/adsense/support/bin/answer.py?hl=en&answer=12654">这里</a>，了解更多</noscript>
+
+		<div id="vcv">
+		<a href="https://cvmkr.com/vcv"><img src="https://cvmkr.com/images/vcv.jpg" alt="" /></a>
+	</div>
 	
+
+<div class="clear"> </div><div id="download-prompt" class="invisible">
+	<div class="prompt-optionset">
+		<div id="choose-style" class="optionset">
+			请选择一个样式<div class="clear"> </div>
+							<p class="executive">
+					<label for="style-executive">Executive</label>
+					<input checked id="style-executive" type="radio" name="style" class="style" value="executive" />
+				</p>
+							<p class="elegant">
+					<label for="style-elegant">Elegant</label>
+					<input  id="style-elegant" type="radio" name="style" class="style" value="elegant" />
+				</p>
+							<p class="bold">
+					<label for="style-bold">Bold</label>
+					<input  id="style-bold" type="radio" name="style" class="style" value="bold" />
+				</p>
+							<p class="literateur">
+					<label for="style-literateur">Literateur</label>
+					<input  id="style-literateur" type="radio" name="style" class="style" value="literateur" />
+				</p>
+							<p class="finesse">
+					<label for="style-finesse">Finesse</label>
+					<input  id="style-finesse" type="radio" name="style" class="style" value="finesse" />
+				</p>
+							<p class="metro">
+					<label for="style-metro">Metro</label>
+					<input  id="style-metro" type="radio" name="style" class="style" value="metro" />
+				</p>
+						<div class="clear"> </div>
+		</div>
+		
+		<div id="choose-type" class="optionset">
+			请选择一个类型<br />
+			<select name="type" class="type">
+								<option value="pdf">PDF</option>
+								<option value="html">HTML</option>
+								<option value="txt">TXT</option>
+							</select>
+			<div class="clear"> </div>
+		</div>
+		
+		<div id="choose-size" class="optionset">
+			页面大小<br />
+			<select name="page_size" class="page_size">
+								<option value="A4">A4</option>
+								<option value="letter">US Letter</option>
+							</select>
+			<div class="clear"> </div>
+		</div>
+		
+		<div id="share-options" class="invisible optionset">
+			分享这个(<a href="" class="url" target="_blank">链接</a>)<br />
+			<input type="text" id="share-link" value="" />
+
+			<div class="publish">
+				<label>停止发布<input type="radio" class="visibility" name="publish" value="unpublish" checked /></label>
+				<label>发布<input type="radio" class="visibility" name="publish" value="publish" /></label>
+			</div>
+
+			<div class="addthis_toolbox addthis_default_style">
+			</div>
+		</div>
+	</div>
+</div>	</div><!-- main //-->
+	<div class="push"> </div>
+</div><!-- wrap //-->
+
+<div id="footer-container">
+	<div id="footer">
+		<div class="content friendly">
+			<ul class="extlinks noul">
+				<li class="ssl">安全的256位SSL加密</li>
+				<li class="chrome"><a href="https://chrome.google.com/webstore/detail/gpbnepipgmcpkdglgbcfmcecaoflaemc">Chrome应用</a></li>
+				<li class="twitter"><a href="http://twitter.com/cvmkr">关注更新@cvmkr</a></li>
+			</ul>
+			<ul class="lang noul">
+									<li><a href="https://cvmkr.com/?lang=en">English</a></li>
+									<li><a href="https://cvmkr.com/?lang=ar">العربية</a></li>
+									<li><a href="https://cvmkr.com/?lang=bg">Български</a></li>
+									<li><a href="https://cvmkr.com/?lang=cz">Čeština</a></li>
+									<li><a href="https://cvmkr.com/?lang=da">Dansk</a></li>
+									<li><a href="https://cvmkr.com/?lang=de">Deutsch</a></li>
+									<li><a href="https://cvmkr.com/?lang=ee">Eesti keel</a></li>
+									<li><a href="https://cvmkr.com/?lang=ge">ქართული</a></li>
+									<li><a href="https://cvmkr.com/?lang=nl">Dutch</a></li>
+									<li><a href="https://cvmkr.com/?lang=es">Español</a></li>
+									<li><a href="https://cvmkr.com/?lang=fa">فارسی</a></li>
+									<li><a href="https://cvmkr.com/?lang=fr">Français</a></li>
+									<li><a href="https://cvmkr.com/?lang=gl">Galician</a></li>
+									<li><a href="https://cvmkr.com/?lang=gr">Έλληνικά</a></li>
+									<li><a href="https://cvmkr.com/?lang=hr">Hrvatski</a></li>
+									<li><a href="https://cvmkr.com/?lang=hu">Hungarian</a></li>
+									<li><a href="https://cvmkr.com/?lang=it">Italiano</a></li>
+									<li><a href="https://cvmkr.com/?lang=iw">עברית</a></li>
+									<li><a href="https://cvmkr.com/?lang=ko">한국어</a></li>
+									<li><a href="https://cvmkr.com/?lang=nn">Norsk</a></li>
+									<li><a href="https://cvmkr.com/?lang=pl">Polski</a></li>
+									<li><a href="https://cvmkr.com/?lang=br">Português (br)</a></li>
+									<li><a href="https://cvmkr.com/?lang=pt">Português (pt)</a></li>
+									<li><a href="https://cvmkr.com/?lang=ro">Român</a></li>
+									<li><a href="https://cvmkr.com/?lang=ru">Pусский</a></li>
+									<li><a href="https://cvmkr.com/?lang=sl">Slovenščina</a></li>
+									<li><a href="https://cvmkr.com/?lang=sk">Slovenský</a></li>
+									<li><a href="https://cvmkr.com/?lang=sq">Shqip</a></li>
+									<li><a href="https://cvmkr.com/?lang=fi">Suomi</a></li>
+									<li><a href="https://cvmkr.com/?lang=sv">Svenska</a></li>
+									<li><a href="https://cvmkr.com/?lang=tr">Türkçe</a></li>
+									<li><a href="https://cvmkr.com/?lang=uk">Українська</a></li>
+									<li><a href="https://cvmkr.com/?lang=vn">Tiếng Việt</a></li>
+									<li><a href="https://cvmkr.com/?lang=ml">മലയാളം</a></li>
+									<li><a href="https://cvmkr.com/?lang=zh">中文</a></li>
+									<li><a href="https://cvmkr.com/?lang=zht">繁體中文</a></li>
+							</ul>
+
+			<ul class="links noul">
+				<li class="title">链接</li>
+				<li><a href="https://cvmkr.com/zh/Pages/help">帮助</a></li>
+				<li><a href="https://cvmkr.com/zh/Pages/tips">简历技巧</a></li>
+				<li><a href="https://cvmkr.com/zh/Pages/languages">多语言支持贡献者</a></li>
+			</ul>
+
+			<div class="share">
+
+			</div>
+		</div>
+
+		<div class="clear"> </div>
+
+		<div class="bar">
+			<div class="content">
+				<p class="copyright">
+					简历客 © 2010 - 2013. 版权所有					<span class="ssl"></span>
+				</p>
+				<ul class="nav noul">
+					<li><a href="https://cvmkr.com/zh/Pages/privacy">隐私条款</a></li>
+					<li><a href="https://cvmkr.com/zh/Contact/">联系方式</a></li>
+				</ul>
+				<div class="">
+					
+				</div>
+				<div class="clear"> </div>
+			</div>
+		</div>
+
+	</div><!-- footer //-->
+
+	<script>var CV_ROOT = "https://cvmkr.com/";</script>
+
+	<script>
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-5537752-3']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+</div>
+
 </body>
 </html>
